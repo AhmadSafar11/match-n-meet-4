@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+            <head>
+                <title>Statistics</title>
+                <link rel="stylesheet"type="text/css" href="CSS/bootstrap.min.css">
+                <link rel="stylesheet" type="text/css" href="CSS/newsletter.css">
+                <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+                <link rel="stylesheet" type="text/css" href="CSS/main.css">
+                <script type="text/javascript" src="JAVASCRIPT/questions%20slider.js"></script>
+                <script type="text/javascript" src="JAVASCRIPT/counter.min.js"></script>
+
+               <!-- <script type="text/javascript" src="JAVASCRIPT/jquery.counterup.min.js"></script>
+                <script src="JAVASCRIPT/jquery.waypoints.min.js"></script>-->
+
+                  <script src="JAVASCRIPT/jquery.js"></script>
+                <script type="text/javascript" src="JAVASCRIPT/wow.min.js"></script>
+                <script type="text/javascript" src="JAVASCRIPT/event%20handlers.js"></script>
+                <script type="text/javascript" src="JAVASCRIPT/custom.js"></script>
+                <script type="text/javascript" src="JAVASCRIPT/jquery-2.1.1.js"></script>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        </head>
+<body>
+    <!--<div class="stat-img">
+        <img src="IMAGES/statistics.jpg" alt="analysis" style=" width: 150px;
+    height: 150px;"/>
+    </div>-->
+    <nav id="navbar">
+    <a href="index.html"><h1 class="logo" style="margin-top: 0px;">MnM</h1></a>
+    <ul>
+      <li><a href="statistics.html">Statistics</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="questions.html">Questions</a></li>
+     </ul>
+    </nav>
+
+      <!-- Counters -->
+    <br />
+<br />
+<br />
+
+<div id="shiva"><span class="count">200</span></div>
+<div id="shiva"><span class="count">1000</span></div>
+<div id="shiva"><span class="count">853</span></div>
+<div id="shiva"><span class="count">154</span></div>
+<div id="shiva"><span class="count">10</span></div>
+<div id="shiva"><span class="count">87</span></div>
+    <!--
+<div style="clear:both"></div>
+<div id="talkbubble"><span class="count">1421</span></div>
+<div id="talkbubble"><span class="count">145</span></div>
+<div id="talkbubble"><span class="count">78</span></div>
+-->
+<br />
+<br />
+<br />
+    <script type="text/jscript">
+
+    $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+    </script>
+
+  <footer style="position: absolute;">
+      <a href="mcah.html" style="text-decoration: none;">&copy; Created by MCAH 2019</a></footer>
+</body>
+</html>
